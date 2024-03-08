@@ -1,0 +1,18 @@
+
+{
+    "current_task": "Provide analysis and recommendations based on the current situation in the 1v1 duel in Starcraft 2.",
+    "current_picture":
+        {
+            "introduction": "Here are some examples of trading in the game.",
+            "path": "",
+            "assistant": ""
+        },
+    "last_picture":
+        {
+            "introduction": "Here are some examples of trading in the game.",
+            "path": "",
+            "assistant": ""
+        },
+    "last_output": "Summary of output information from the previous step.",
+    "pysc2_information": "Details of information passed by pysc2."
+}
