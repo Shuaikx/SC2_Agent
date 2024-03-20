@@ -13,9 +13,9 @@ class Sc2Env(gym.Env):
 		# Define action and observation space
 		# They must be gym.spaces objects
 		# Example when using discrete actions:
-		self.action_space = spaces.Discrete(6)
-		self.observation_space = spaces.Box(low=0, high=177,
-											shape=(176,184,3), dtype=np.uint8)
+		self.action_space = spaces.Discrete(17)
+		self.observation_space = spaces.Box(low=0, high=225,
+											shape=(224,224,3), dtype=np.uint8)
 
 	def step(self, action):
 		wait_for_action = True
@@ -23,7 +23,7 @@ class Sc2Env(gym.Env):
 		while wait_for_action:
 			#print("waiting for action")
 			try:
-				with open('state_rwd_action.pkl', 'rb') as f:
+				with open('state_rwd.pkl', 'rb') as f:
 					state_rwd_action = pickle.load(f)
 
 					if state_rwd_action['action'] is not None:
@@ -33,7 +33,7 @@ class Sc2Env(gym.Env):
 						#print("Needs action")
 						wait_for_action = False
 						state_rwd_action['action'] = action
-						with open('state_rwd_action.pkl', 'wb') as f:
+						with open('state_rwd.pkl', 'wb') as f:
 							# now we've added the action.
 							pickle.dump(state_rwd_action, f)
 			except Exception as e:
@@ -44,8 +44,8 @@ class Sc2Env(gym.Env):
 		wait_for_state = True
 		while wait_for_state:
 			try:
-				if os.path.getsize('state_rwd_action.pkl') > 0:
-					with open('state_rwd_action.pkl', 'rb') as f:
+				if os.path.getsize('state_rwd.pkl') > 0:
+					with open('state_rwd.pkl', 'rb') as f:
 						state_rwd_action = pickle.load(f)
 						if state_rwd_action['action'] is None:
 							#print("No state yet")
@@ -63,7 +63,7 @@ class Sc2Env(gym.Env):
 				observation = map
 				# if still failing, input an ACTION, 3 (scout)
 				data = {"state": map, "reward": 0, "action": 3, "done": False}  # empty action waiting for the next one!
-				with open('state_rwd_action.pkl', 'wb') as f:
+				with open('state_rwd.pkl', 'wb') as f:
 					pickle.dump(data, f)
 
 				state = map
@@ -78,10 +78,10 @@ class Sc2Env(gym.Env):
 
 	def reset(self):
 		print("RESETTING ENVIRONMENT!!!!!!!!!!!!!")
-		map = np.zeros((176,184,3), dtype=np.uint8)
+		map = np.zeros((224,224,3), dtype=np.uint8)
 		observation = map
 		data = {"state": map, "reward": 0, "action": None, "done": False}  # empty action waiting for the next one!
-		with open('state_rwd_action.pkl', 'wb') as f:
+		with open('state_rwd.pkl', 'wb') as f:
 			pickle.dump(data, f)
 
 		# run agent.py non-blocking:

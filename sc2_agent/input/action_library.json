@@ -1,0 +1,70 @@
+{
+    "build_worker": {
+        "description": "Train a worker unit",
+        "action": 0
+    },
+    "build_pylon": {
+        "description": "Construct a Pylon to increase the supply limit",
+        "action": 1
+    },
+    "build_nexus": {
+        "description": "Construct a Nexus for resource collection and unit training",
+        "action": 2
+    },
+    "build_assimilators": {
+        "description": "Construct Assimilators to harvest Vespene gas",
+        "action": 3
+    },
+    "build_gateway": {
+        "description": "Construct a Gateway to train basic ground units",
+        "action": 4
+    },
+    "build_cyberneticscore": {
+        "description": "Construct a Cybernetics Core to unlock advanced units and upgrades",
+        "action": 5
+    },
+    "build_twilight_council": {
+        "description": "Construct a Twilight Council to unlock further advanced units and upgrades",
+        "action": 6
+    },
+    "build_shield_battery": {
+        "description": "Construct a Shield Battery to regenerate shields of units",
+        "action": 7
+    },
+    "build_dark_shrine": {
+        "description": "Construct a Dark Shrine to enable Dark Templar training",
+        "action": 8
+    },
+    "update_warp_gate": {
+        "description": "Upgrade Gateways to Warp Gates, allowing for faster unit deployment",
+        "action": 9
+    },
+    "update_charge": {
+        "description": "Research Charge to increase Zealot movement speed and attack",
+        "action": 10
+    },
+    "build_stargate": {
+        "description": "Construct a Stargate to train advanced air units",
+        "action": 11
+    },
+    "warp_stalker": {
+        "description": "Warp in a Stalker, a ranged ground unit",
+        "action": 12
+    },
+    "warp_darktemplar": {
+        "description": "Warp in a Dark Templar, a stealth ground unit",
+        "action": 13
+    },
+    "warp_zealots": {
+        "description": "Warp in Zealots, a basic melee ground unit",
+        "action": 14
+    },
+    "train_voidray": {
+        "description": "Train a Voidray, a powerful air unit",
+        "action": 16
+    },
+    "attack": {
+        "description": "Get all your troops to attack the enemy",
+        "action": 17
+    }
+}

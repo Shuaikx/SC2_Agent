@@ -1,1 +1,7 @@
-
+stable_baselines3
+gym
+shimmy
+tensorboard
+opencv-python
+sc2
+openai

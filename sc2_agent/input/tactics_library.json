@@ -1,0 +1,34 @@
+{
+  "warp_zealots_allin": {
+    "description": "Refers to filling up eight warp gates and then warping in a large number of zealots to attack the enemy.",
+    "tactic_overview": "A strategy for the 5-6 minute mark, featuring two nexuses, one assimilator, and having 35 probes. The attack is launched when the count of zealots reaches 15. This tactic cannot be used after 3 minutes.",
+    "tactic_characteristics": "All-in, suitable for playing against Zerg and Terran.",
+    "tactic_advantages": "Aggressive and fast.",
+    "tactic_disadvantages": "Unable to defend against air units, and has relatively weak defense capabilities before the 3-minute mark. Additionally, as an all-in strategy, it must defeat the enemy in a single attempt.",
+    "action": 18
+  },
+  "warp_darktemplar_suppress": {
+    "description": "Produces the darktemplar at the first time and then attacks the opponent's worker.",
+    "tactic_overview": "Attack at around six minutes, need 2 Nexus, need 2 Assimilators, need 38 probe, attack the local worker when there are two darktemplars.",
+    "tactic_characteristics": "Suppress the opponent's economy, suitable for use against Protoss, Zerg and Terran.",
+    "tactic_advantages": "If the enemy does not have reconnaissance, it will be difficult to defend, and it can destroy a large number of workers in a short time.",
+    "tactic_disadvantages": "There is no defensive ability 5 minutes before, if the other side reconnaissance in advance, the difficulty of defense will be greatly reduced.",
+    "action": 19
+  },
+  "defend": {
+    "description": "This tactic is primarily used to defend, using stalker and shield battery.",
+    "tactic_overview": "Nothing.",
+    "tactic_characteristics": "Used to defend against an opponent's allin, or to suppress.",
+    "tactic_advantages": "It can be used to defend any situation.",
+    "tactic_disadvantages": "May affect economic development due to excessive defense.",
+    "action": 20
+  },
+  "rapid_economic_development": {
+    "description": "This tactic is suitable for rapid economic development.",
+    "tactic_overview": "Building a new NEXUS marks the end of this tactic.",
+    "tactic_characteristics": "Rapid economic development, building Probes.",
+    "tactic_advantages": "Allows for rapid economic development, thus having more resources to build a powerful army after the tactic ends.",
+    "tactic_disadvantages": "Cannot withstand harassment and pressure from the enemy. If the opponent uses an ALL-in tactic, then we might fail.",
+    "action": 21
+  }
+}
