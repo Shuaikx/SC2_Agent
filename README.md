@@ -1,4 +1,4 @@
-# StarCraft II Agent : Integrating Large Language Model Decision Making with Reinforcement Learning
+# Tactics framework: Synergizing Reinforcement Learning and Large Language Models to Play StarCraft II
 
 ![SCII-Structure](https://github.com/Shuaikx/SC2_Agent/blob/main/Images/SC2-structure.png)
 
