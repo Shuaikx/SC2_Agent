@@ -220,30 +220,34 @@ class MyBot(BotAI):
                 print(e)
         game_loop = self.state.game_loop
 
-        # 转换游戏时间为秒数
+        # Convert the game time to seconds
         game_time_seconds = game_loop / 22.4
         nexus_count = self.structures(UnitTypeId.NEXUS).amount
-        # 农民（探测器）数量
+        
+        # Number of farmers (detectors)
         probe_count = self.units(UnitTypeId.PROBE).amount
-        # 战斗人口数量（军事单位）
+        
+        # Combat population (military units)
         army_count = self.supply_army
-        # 建筑数量示例：兵营和控制核心
+        
+        # Example number of buildings: Barracks and control core
         gateway_count = self.structures(UnitTypeId.GATEWAY).amount
         cybernetics_core_count = self.structures(UnitTypeId.CYBERNETICSCORE).amount
-        # 人口上限
+        
+
         supply_cap = self.supply_cap
-        # 人口使用
+
         supply_used = self.supply_used
-        # 矿脉余额
+
         minerals = self.minerals
-        # 瓦斯余额
+
         vespene = self.vespene
-        # 所能看到的敌方建筑和单位
+
         enemy_structures = self.enemy_structures
         enemy_units = self.enemy_units
         game_time = f"{game_time_seconds}s"
 
-        # 收集你想要写入JSON的数据
+        # read json
         game_data = {
             "game_time": game_time,
             "nexus_count": nexus_count,
