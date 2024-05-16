@@ -240,16 +240,16 @@ class MyBot(BotAI):
         supply_used = self.supply_used
 
         
-        # 矿脉余额
+
         minerals = self.minerals
-        # 瓦斯余额
+
         vespene = self.vespene
-        # 所能看到的敌方建筑和单位
+
         enemy_structures = self.enemy_structures
         enemy_units = self.enemy_units
         game_time = f"{game_time_seconds}s"
 
-        # 收集你想要写入JSON的数据
+        # read json
         game_data = {
             "game_time": game_time,
             "nexus_count": nexus_count,
